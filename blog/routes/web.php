@@ -14,10 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Auth::routes();
-
-Route::get('createcaptcha', 'CaptchaController@create');
-Route::post('captcha', 'CaptchaController@captchaValidate');
-Route::get('refreshcaptcha', 'CaptchaController@refreshCaptcha');
-Route::get('/home', 'HomeController@index')->name('home');
